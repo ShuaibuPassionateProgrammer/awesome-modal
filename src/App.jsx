@@ -37,7 +37,7 @@ const App = () => {
                 <input type="password" placeholder="Password" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
               </div>
               <div className="mb-4">
-                <button className="bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
+                <button className="w-full bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
               </div>
             </div>
           </div>
