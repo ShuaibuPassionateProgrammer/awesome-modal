@@ -55,8 +55,8 @@ const App = () => {
                 <button
                   className="text-blue-500 hover:underline cursor-pointer"
                   onClick={() => {
-                    setIsLoginModal(false);
                     setIsSignUpModal(true);
+                    setIsLoginModal(false);
                   }}
                 >
                   Sign Up
@@ -85,8 +85,8 @@ const App = () => {
                 <button
                   className="text-blue-500 hover:underline cursor-pointer"
                   onClick={() => {
-                    setIsSignUpModal(false);
                     setIsLoginModal(true);
+                    setIsSignUpModal(false);
                   }}
                 >
                   Sign In
