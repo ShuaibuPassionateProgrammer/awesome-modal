@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 const App = () => {
   const [isLoginModal, setIsLoginModal] = useState(false);
   const [isSignUpModal, setIsSignUpModal] = useState(false);
+  const [isForgotPasswordModal, setIsForgotPasswordModal] = useState(false);
 
   return (
     <div className="bg-gray-200 min-h-screen">
