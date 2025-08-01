@@ -120,7 +120,6 @@ const App = () => {
               <p className="font-medium">Enter your email address Address, the we will send you OTP</p>
               <input type="email" placeholder="Email" className="w-full rounded bg-gray-200 px-4 py-2" />
               <button className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Reset Password</button>
-
             </div>
           </div>
         </div>
