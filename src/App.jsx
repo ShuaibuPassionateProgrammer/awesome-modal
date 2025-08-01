@@ -39,6 +39,9 @@ const App = () => {
               <div className="mb-4">
                 <button className="w-full bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
               </div>
+              <div className="mb-4">
+                Don't have an Account? <Link to="/signup" className="text-blue-500 hover:underline">Sign Up</Link>
+              </div>
             </div>
           </div>
         </div>
