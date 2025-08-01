@@ -98,6 +98,13 @@ const App = () => {
           </div>
         </div>
       )}
+      {isForgotPasswordModal && (
+        <div className="flex flex-col justify-center items-center min-h-screen w-screen bg-black/50 fixed top-0 left-0">
+          <div className="w-[400px] bg-white p-6 shadow rounded relative">
+            {/*  */}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
