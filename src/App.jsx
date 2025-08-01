@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div className="bg-gray-200 min-h-screen">
-      <div className="flex justify-between items-center mx-auto p-4">
+      <div className="flex justify-between items-center mx-auto p-4 bg-gray-100 shadow-md">
         <a href="#" className="text-2xl font-bold italic">Passionate Programmer</a>
         <nav className="space-x-4">
           <ul className="flex gap-4">
