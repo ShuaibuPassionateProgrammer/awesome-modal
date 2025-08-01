@@ -16,10 +16,33 @@ const App = () => {
           </ul>
         </nav>
         <div className="flex items-center space-x-4">
-          <button className="bg-blue-500 text-center px-4 py-2 rounded hover:bg-blue-600 cursor-pointer" onClick={() => setIsLogin(true)}>Login</button>
+          <button className="bg-blue-500 text-center px-4 py-2 rounded hover:bg-blue-600 cursor-pointer" onClick={() => setIsLoginModal(!isLoginModal)}>Login</button>
           <button className="bg-green-500 text-center px-4 py-2 rounded hover:bg-green-600 cursor-pointer">Sign Up</button>
         </div>
       </div>
+      {isLoginModal && (
+        <div className="flex flex-col justify-center items-center min-h-screen w-screen bg-black/50 fixed top-0 letft-0">
+          <div className="max-width-[400px] bg-white p-4 space-x-10 shadow rounded relative">
+            <div className="flex justify-between">
+              <div className="mb-4">
+                <h1>Login Information</h1>
+                <IoClose size={20} onClick={() => setIsLoginModal(false)} className="cursor-pointer absolute top-5 right-5" />
+              </div>
+            </div>
+            <div className="flex justify-center flex-col">
+              <div className="mb-4">
+                <input type="text" placeholder="Username" className="rounded shadow px-4 py-2" />
+              </div>
+              <div className="mb-4">
+                <input type="password" placeholder="Password" className="rounded px-4 py-2" />
+              </div>
+              <div className="mb-4">
+                <button className="bg-blue-500 text-center px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
