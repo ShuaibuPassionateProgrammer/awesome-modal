@@ -3,9 +3,21 @@ import { useState, useEffect } from 'react';
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
   const slides = [
-    { url: 'https://source.unsplash.com/random/1600x900/?technology', title: 'Tech' },
-    { url: 'https://source.unsplash.com/random/1600x900/?programming', title: 'Code' },
-    { url: 'https://source.unsplash.com/random/1600x900/?computer', title: 'Computer' },
+    {
+      url: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3',
+      title: 'Modern Development',
+      subtitle: 'Build the future with cutting-edge tech'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3',
+      title: 'Clean Code',
+      subtitle: 'Write maintainable, efficient code'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3',
+      title: 'Web Solutions',
+      subtitle: 'Create powerful web applications'
+    }
   ];
 
   useEffect(() => {

@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [isLoginModal, setIsLoginModal] = useState(false);
@@ -17,18 +18,18 @@ const App = () => {
   const cards = [
     {
       title: "Web Development",
-      description: "Learn modern web development technologies",
-      image: "https://source.unsplash.com/random/800x600/?webdev"
+      description: "Learn modern web development technologies and frameworks",
+      image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3"
     },
     {
       title: "Mobile Development",
-      description: "Create amazing mobile applications",
-      image: "https://source.unsplash.com/random/800x600/?mobile"
+      description: "Create amazing cross-platform mobile applications",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3"
     },
     {
       title: "Cloud Computing",
-      description: "Master cloud technologies and services",
-      image: "https://source.unsplash.com/random/800x600/?cloud"
+      description: "Master cloud technologies and serverless architecture",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3"
     }
   ];
 
@@ -71,6 +72,9 @@ const App = () => {
           <Contact />
         </section>
       </main>
+
+      {/* Footer */}
+      <Footer />
 
       {/* Modals */}
       {isLoginModal && (
