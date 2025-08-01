@@ -22,7 +22,7 @@ const App = () => {
       </div>
       {isLoginModal && (
         <div className="flex flex-col justify-center items-center min-h-screen w-screen bg-black/50 fixed top-0 letft-0">
-          <div className="max-width-[400px] bg-white p-4 space-x-10 shadow rounded relative">
+          <div className="w-[400px] bg-white p-4 space-x-10 shadow rounded relative">
             <div className="flex justify-between">
               <div className="mb-4">
                 <h1>Login Information</h1>
@@ -31,13 +31,13 @@ const App = () => {
             </div>
             <div className="flex justify-center flex-col">
               <div className="mb-4">
-                <input type="text" placeholder="Username" className="rounded bg-gray-200 px-4 py-2" />
+                <input type="text" placeholder="Username" className="w-100 b-box rounded bg-gray-200 px-4 py-2" />
               </div>
               <div className="mb-4">
-                <input type="password" placeholder="Password" className="rounded bg-gray-200 px-4 py-2" />
+                <input type="password" placeholder="Password" className="w-100 b-box rounded bg-gray-200 px-4 py-2" />
               </div>
               <div className="mb-4">
-                <button className="bg-blue-500 text-center px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
+                <button className="bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
               </div>
             </div>
           </div>
