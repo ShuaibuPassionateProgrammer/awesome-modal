@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { Link, useNavigate } from "react-router-dom";
 
 const App = () => {
   const [isLoginModal, setIsLoginModal] = useState(false);
   const [isSignUpModal, setIsSignUpModal] = useState(false);
-  const navigate = useNavigate();
 
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 min-h-screen">
       <div className="flex justify-between items-center mx-auto p-4">
         <a href="#" className="text-2xl font-bold italic">Passionate Programmer</a>
         <nav className="space-x-4">
@@ -44,21 +42,15 @@ const App = () => {
           <div className="w-[400px] bg-white p-6 shadow rounded relative">
             <div className="flex justify-between">
               <div className="mb-4">
-                <h1>Login Information</h1>
+                <h1 className="text-xl font-semibold">Login Information</h1>
                 <IoClose size={20} onClick={() => setIsLoginModal(false)} className="cursor-pointer absolute top-5 right-5" />
               </div>
             </div>
-            <div className="flex justify-center flex-col">
-              <div className="mb-4">
-                <input type="text" placeholder="Username" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
-              </div>
-              <div className="mb-4">
-                <input type="password" placeholder="Password" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
-              </div>
-              <div className="mb-4">
-                <button className="w-full bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
-              </div>
-              <div className="mb-4 text-center text-sm text-gray-600">
+            <div className="flex flex-col gap-4">
+              <input type="text" placeholder="Username" className="w-full rounded bg-gray-200 px-4 py-2" />
+              <input type="password" placeholder="Password" className="w-full rounded bg-gray-200 px-4 py-2" />
+              <button className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign In</button>
+              <p className="text-center text-sm text-gray-600">
                 Don't have an Account?{" "}
                 <button
                   className="text-blue-500 hover:underline"
@@ -69,7 +61,7 @@ const App = () => {
                 >
                   Sign Up
                 </button>
-              </div>
+              </p>
             </div>
           </div>
         </div>
@@ -79,23 +71,15 @@ const App = () => {
           <div className="w-[400px] bg-white p-6 shadow rounded relative">
             <div className="flex justify-between">
               <div className="mb-4">
-                <h1>Sign Up</h1>
+                <h1 className="text-xl font-semibold">Sign Up</h1>
                 <IoClose size={20} onClick={() => setIsSignUpModal(false)} className="cursor-pointer absolute top-5 right-5" />
               </div>
             </div>
-            <div className="flex justify-center flex-col">
-              <div className="mb-4">
-                <input type="text" placeholder="Username" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
-              </div>
-              <div className="mb-4">
-                <input type="email" placeholder="Email" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
-              </div>
-              <div className="mb-4">
-                <input type="password" placeholder="Password" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
-              </div>
-              <div className="mb-4">
-                <button className="w-full bg-green-500 text-center text-white px-4 py-2 rounded hover:bg-green-600 cursor-pointer">Sign Up</button>
-              </div>
+            <div className="flex flex-col gap-4">
+              <input type="text" placeholder="Username" className="w-full rounded bg-gray-200 px-4 py-2" />
+              <input type="email" placeholder="Email" className="w-full rounded bg-gray-200 px-4 py-2" />
+              <input type="password" placeholder="Password" className="w-full rounded bg-gray-200 px-4 py-2" />
+              <button className="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Sign Up</button>
             </div>
           </div>
         </div>
