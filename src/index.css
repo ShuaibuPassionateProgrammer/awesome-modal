@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* Accounts for fixed navbar */
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
