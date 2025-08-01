@@ -40,7 +40,6 @@ const App = () => {
           </button>
         </div>
       </div>
-      
       {isLoginModal && (
         <LoginModal 
           setIsLoginModal={setIsLoginModal}
@@ -48,14 +47,12 @@ const App = () => {
           setIsForgotPasswordModal={setIsForgotPasswordModal}
         />
       )}
-      
       {isSignUpModal && (
         <SignupModal 
           setIsSignUpModal={setIsSignUpModal}
           setIsLoginModal={setIsLoginModal}
         />
       )}
-      
       {isForgotPasswordModal && (
         <ForgotPasswordModal 
           setIsForgotPasswordModal={setIsForgotPasswordModal}
