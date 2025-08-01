@@ -49,6 +49,7 @@ const App = () => {
             <div className="flex flex-col gap-4">
               <input type="text" placeholder="Username" className="w-full rounded bg-gray-200 px-4 py-2" />
               <input type="password" placeholder="Password" className="w-full rounded bg-gray-200 px-4 py-2" />
+              <p className="text-blue-500 hover:underline cursor-pointer">Forgot Password?</p>
               <button className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign In</button>
               <p className="text-center text-sm text-gray-600">
                 Don't have an Account?{" "}
