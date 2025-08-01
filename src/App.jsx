@@ -41,7 +41,7 @@ const App = () => {
       </div>
       {isLoginModal && (
         <div className="flex flex-col justify-center items-center min-h-screen w-screen bg-black/50 fixed top-0 left-0">
-          <div className="w-[400px] bg-white p-4 space-x-10 shadow rounded relative">
+          <div className="w-[400px] bg-white p-6 shadow rounded relative">
             <div className="flex justify-between">
               <div className="mb-4">
                 <h1>Login Information</h1>
@@ -76,7 +76,7 @@ const App = () => {
       )}
       {isSignUpModal && (
         <div className="flex flex-col justify-center items-center min-h-screen w-screen bg-black/50 fixed top-0 left-0">
-          <div className="w-[400px] bg-white p-4 space-x-10 shadow rounded relative">
+          <div className="w-[400px] bg-white p-6 shadow rounded relative">
             <div className="flex justify-between">
               <div className="mb-4">
                 <h1>Sign Up</h1>
