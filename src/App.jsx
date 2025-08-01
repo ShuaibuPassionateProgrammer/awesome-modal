@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import { Link, useNavigate } from "react-router-dom";
 
 const App = () => {
   const [isLoginModal, setIsLoginModal] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="bg-gray-200">
@@ -40,7 +42,8 @@ const App = () => {
                 <button className="w-full bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
               </div>
               <div className="mb-4">
-                Don't have an Account? <Link to="/signup" className="text-blue-500 hover:underline">Sign Up</Link>
+                {/* Don't have an Account? <Link to="/signup" className="text-blue-500 hover:underline">Sign Up</Link> */}
+                Don't have an Account? {navigate("/signup")}
               </div>
             </div>
           </div>
