@@ -31,10 +31,10 @@ const App = () => {
             </div>
             <div className="flex justify-center flex-col">
               <div className="mb-4">
-                <input type="text" placeholder="Username" className="w-100 b-box rounded bg-gray-200 px-4 py-2" />
+                <input type="text" placeholder="Username" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
               </div>
               <div className="mb-4">
-                <input type="password" placeholder="Password" className="w-100 b-box rounded bg-gray-200 px-4 py-2" />
+                <input type="password" placeholder="Password" className="w-full b-box rounded bg-gray-200 px-4 py-2" />
               </div>
               <div className="mb-4">
                 <button className="bg-blue-500 text-center text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Sign In</button>
