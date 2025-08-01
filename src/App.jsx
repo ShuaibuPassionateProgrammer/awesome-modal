@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import LoginModal from "./components/LoginModal";
 
 const App = () => {
   const [isLoginModal, setIsLoginModal] = useState(false);
