@@ -2,11 +2,34 @@ import React, { useState } from "react";
 import LoginModal from "./components/LoginModal";
 import SignupModal from "./components/SignupModal";
 import ForgotPasswordModal from "./components/ForgotPasswordModal";
+import Carousel from "./components/Carousel";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Card from "./components/Card";
 
 const App = () => {
   const [isLoginModal, setIsLoginModal] = useState(false);
   const [isSignUpModal, setIsSignUpModal] = useState(false);
   const [isForgotPasswordModal, setIsForgotPasswordModal] = useState(false);
+
+  const cards = [
+    {
+      title: "Web Development",
+      description: "Learn modern web development technologies",
+      image: "https://source.unsplash.com/random/800x600/?webdev"
+    },
+    {
+      title: "Mobile Development",
+      description: "Create amazing mobile applications",
+      image: "https://source.unsplash.com/random/800x600/?mobile"
+    },
+    {
+      title: "Cloud Computing",
+      description: "Master cloud technologies and services",
+      image: "https://source.unsplash.com/random/800x600/?cloud"
+    }
+  ];
 
   return (
     <div className="bg-gray-200 min-h-screen">
@@ -40,6 +63,22 @@ const App = () => {
           </button>
         </div>
       </div>
+      <Hero />
+      <Carousel />
+      
+      {/* Cards section */}
+      <div className="container mx-auto px-6 py-16">
+        <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {cards.map((card, index) => (
+            <Card key={index} {...card} />
+          ))}
+        </div>
+      </div>
+
+      <About />
+      <Contact />
+
       {isLoginModal && (
         <LoginModal 
           setIsLoginModal={setIsLoginModal}
