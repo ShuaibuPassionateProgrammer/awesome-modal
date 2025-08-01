@@ -53,7 +53,7 @@ const App = () => {
               <p className="text-center text-sm text-gray-600">
                 Don't have an Account?{" "}
                 <button
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline cursor-pointer"
                   onClick={() => {
                     setIsLoginModal(false);
                     setIsSignUpModal(true);
@@ -80,6 +80,13 @@ const App = () => {
               <input type="email" placeholder="Email" className="w-full rounded bg-gray-200 px-4 py-2" />
               <input type="password" placeholder="Password" className="w-full rounded bg-gray-200 px-4 py-2" />
               <button className="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Sign Up</button>
+              <p className="text-center text-sm text-gray-600">
+                Already have and Account?{" "}
+                <button
+                  className="text-blue-500 hover:underline cursor-pointer">
+                  Sign In
+                </button>
+              </p>
             </div>
           </div>
         </div>
