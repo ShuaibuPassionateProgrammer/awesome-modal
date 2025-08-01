@@ -83,7 +83,12 @@ const App = () => {
               <p className="text-center text-sm text-gray-600">
                 Already have and Account?{" "}
                 <button
-                  className="text-blue-500 hover:underline cursor-pointer">
+                  className="text-blue-500 hover:underline cursor-pointer"
+                  onClick={() => {
+                    setIsSignUpModal(false);
+                    setIsLoginModal(true);
+                  }}
+                >
                   Sign In
                 </button>
               </p>
